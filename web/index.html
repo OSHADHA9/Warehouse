@@ -1,16 +1,78 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Welcome Page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                color: #333;
+            }
+            
+            .container {
+                text-align: center;
+                background: white;
+                padding: 40px;
+                border-radius: 10px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+                max-width: 500px;
+                width: 90%;
+            }
+            
+            h1 {
+                color: #4a6baf;
+                margin-bottom: 30px;
+            }
+            
+            .login-btn {
+                display: inline-block;
+                background: #4a6baf;
+                color: white;
+                padding: 12px 30px;
+                text-decoration: none;
+                border-radius: 50px;
+                font-weight: bold;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 15px rgba(74, 107, 175, 0.3);
+                margin-top: 20px;
+            }
+            
+            .login-btn:hover {
+                background: #3a5a9f;
+                transform: translateY(-3px);
+                box-shadow: 0 7px 20px rgba(74, 107, 175, 0.4);
+            }
+            
+            .welcome-text {
+                margin-bottom: 30px;
+                line-height: 1.6;
+            }
+            
+            .logo {
+                width: 80px;
+                margin-bottom: 20px;
+            }
+        </style>
     </head>
     <body>
-        <div><a href="login.jsp">Login Page</a></div>
+        <div class="container">
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4a6baf">
+                <path d="M12 2L1 12h3v9h6v-6h4v6h6v-9h3L12 2zm0 2.8L18 9v9h-2v-6h-8v6H6V9l6-6.2z"/>
+            </svg>
+            <h1>Welcome to Our Platform</h1>
+            <p class="welcome-text">
+                We're glad to have you here. Please login to access your account 
+                and explore all the amazing features we have prepared for you.
+            </p>
+            <a href="login.jsp" class="login-btn">Login Now</a>
+        </div>
     </body>
 </html>

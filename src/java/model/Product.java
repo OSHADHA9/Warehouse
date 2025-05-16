@@ -6,6 +6,7 @@ public class Product {
     private String description;
     private int quantity;
     private double price;
+    private int warehouseId;
 
     // Getters and setters
     public int getId() { return id; }
@@ -23,7 +24,11 @@ public class Product {
     public double getPrice() { return price; }
     public void setPrice(double price) { this.price = price; }
 
-    public void setWarehouseId(int parseInt) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public int getWarehouseId() {
+    return warehouseId;
 }
+    
+    public void setWarehouseId(int warehouseId) {
+    this.warehouseId = warehouseId;
+}
+}   
